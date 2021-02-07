@@ -3,15 +3,16 @@ const data = require('./data.json');
 
 const network = new brain.recurrent.LSTM();
 
-const trainingData = data.map(item =>({
-input: item.age,
-output: item.favoriteFruit
-}));
+const trainingData = data.map(item =>(
+    {input: item.age, output: item.gender}
+   
+
+));
 
 network.train(trainingData,{
-iterations: 2000,
-errorThresh: 0.011
+iterations: 1500
+
 });
 
-const output = network.run(29);
+const output = network.run(23);
 console.log(output);
