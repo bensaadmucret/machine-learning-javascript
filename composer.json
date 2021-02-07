@@ -1,0 +1,13 @@
+{
+    "name": "ben/machin-learning",
+    "description": "machine-learning-javascript",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bensaad Mohammed",
+            "email": "bensaadmucret@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
